@@ -31,3 +31,4 @@ function TransactionTable({ transactions }) {
 }
 
 export default TransactionTable;
+

@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import TransactionTable from './TransactionTable'; // Import the TransactionTable component
-
-const transactions = [
-  // Include your transaction data here
-  // Make sure it matches the structure of your JSON data
-];
+import TransactionTable from './TransactionTable';
+import fetchTransactions from './api'; 
 
 function App() {
+  const [transactions, setTransactions] = useState([]);
+
+  useEffect(() => {
+    
+    fetchTransactions()
+      .then((data) => setTransactions(data))
+      .catch((error) => console.error('Error fetching transactions:', error));
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <em>DINNER IS SERVED</em>
-      </header>
-      <TransactionTable transactions={transactions} /> {/* Pass transactions as a prop */}
+      Code Challenge: Bank of Flatiron
+</header>
+      <TransactionTable transactions={transactions} />
     </div>
   );
 }
