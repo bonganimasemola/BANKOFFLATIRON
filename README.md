@@ -16,7 +16,6 @@ As a user, I can:
 3: Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
 
 #### What other features will the user have access to on the app? (Bonus Deliverables):
-
 As a user, I should be able to:
 
 1: Sort transactions alphabetically by category or description.

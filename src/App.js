@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import TransactionTable from './TransactionTable';
-import fetchTransactions from './api'; 
+import fetchTransactions  from './api'; 
+ 
 
 function App() {
   const [transactions, setTransactions] = useState([]);

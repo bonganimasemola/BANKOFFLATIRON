@@ -6,6 +6,7 @@ const fetchTransactions = async () => {
     if (!response.ok) {
       throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
     }
+   //console.log(data);
     const data = await response.json();
     return data;
   } catch (error) {
