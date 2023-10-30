@@ -18,6 +18,13 @@ function App() {
     setTransactions([...transactions, newTransaction]);
   };
 
+  const deleteTransaction = (transactionId) => {
+    const updatedTransactions = transactions.filter(
+      (transaction) => transaction.id !== transactionId
+    );
+    setTransactions(updatedTransactions);
+  };
+
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -27,12 +34,13 @@ function App() {
       <header className="App-header">Bank of Flatiron</header>
       <TransactionSubmitForm addTransaction={addTransaction} />
       <TransactionSearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <TransactionTable transactions={filteredTransactions} />
+      <TransactionTable transactions={filteredTransactions} onDeleteTransaction={deleteTransaction} />
     </div>
   );
 }
 
 export default App;
+
 
 
 
