@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header"><strong>Bank of Flatiron</strong></header>
+      <header className="App-header">Bank of Flatiron</header>
       <TransactionSubmitForm addTransaction={addTransaction} />
       <TransactionSearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <TransactionTable transactions={filteredTransactions} />
@@ -33,6 +33,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

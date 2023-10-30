@@ -20,3 +20,4 @@ function TransactionSearchBar({ searchTerm, setSearchTerm }) {
 }
 
 export default TransactionSearchBar;
+
