@@ -6,7 +6,7 @@ The aim of this project is to build out a React application that displays a list
 ## Requirements:
 This project must: Fetch data from a local server running JSON DB server.
 
-### What will be user experierence on the app be? (Deliverables):
+### What will the user experierence on the app be? (Deliverables):
 As a user, I can:
 
 1: See a table of all transactions. 

@@ -29,7 +29,7 @@ function TransactionSubmitForm({ addTransaction }) {
 
   return (
     <div>
-      <h2>Add a New Transaction</h2>
+      <h4>Add a New Transaction</h4>
       <form onSubmit={handleSubmit}>
         <label>
           Date:
