@@ -11,7 +11,7 @@ As a user, I can:
 
 1: See a table of all transactions. 
 
-2:Fill out and submit the form to add a new transaction. This should add the new transaction to the table the new transaction does not have to be persisted to the backend.
+2: Fill out and submit the form to add a new transaction. This should add the new transaction to the table the new transaction does not have to be persisted to the backend.
 
 3: Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
 

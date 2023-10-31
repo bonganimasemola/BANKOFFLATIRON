@@ -7,8 +7,8 @@ import fetchTransactions from './api';
 function App() {
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc'); // 'asc' for ascending, 'desc' for descending
-  const [sortBy, setSortBy] = useState('description'); // 'description' or 'category'
+  const [sortOrder, setSortOrder] = useState('asc'); 
+  const [sortBy, setSortBy] = useState('description'); 
 
   useEffect(() => {
     fetchTransactions()
